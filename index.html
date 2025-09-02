@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>The Big Bang Theory</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="p-5 bg-dark">
+        <nav class="container d-flex justify-content-between align-items-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/TBBT_logo.svg" class="nav-img" alt="Logo The Big Bang Theory" loading="lazy">
+            <ul class="nav mt-5">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galeria">Personagens</a></li>
+                <li class="nav-item"><a class="nav-link" href="#quiz">Quiz</a></li>
+            </ul>
+            <div id="acessibilidade" class="menu-acessibilidade">
+                <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao" aria-expanded="false">Acessibilidade</button>
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+                    <button id="aumentar-fonte" class="btn btn-primary fw-bold">A+</button>
+                    <button id="diminuir-fonte" class="btn btn-primary fw-bold">A-</button>
+                    <button id="alterna-contraste" class="btn btn-primary fw-bold"><i class="bi bi-shadows"></i></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+
+        <!-- INÍCIO -->
+        <section id="inicio" class="my-5">
+            <div class="inicio-fundo d-flex justify-content-between align-items-center">
+                <div class="esquerda-conteudo">
+                    <h1 class="display-4 text-white fst-italic fw-bold">Bem-vindos a</h1>
+                    <img src="https://aventurasnahistoria.com.br/wp-content/uploads/entretenimento/tbbt.jpg "class="mb-3" width="500" alt="The Big Bang Theory Logo" loading="lazy">
+                    <a href="#sobre" class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero conhecer!</a>
+        </section>
+
+        <!-- SOBRE -->
+        <section id="sobre" class="my-5 pt-6" tabindex="0" aria-label="Seção explicativa sobre The Big Bang Theory">
+            <div class="container d-flex align-items-center">
+                <div class="col-4 d-flex justify-content-center">
+                    <img src="https://artfiles.alphacoders.com/716/71692.jpg" class="rounded-pill" width="273" height="331" alt="Sheldon Cooper" loading="lazy">
+                </div>
+                <div class="col-5">
+                    <h2>Sobre a Série</h2>
+                    <p class="p-2">The Big Bang Theory é uma sitcom americana exibida entre 2007 e 2019, acompanhando a
+                        vida de Leonard, Sheldon, Howard e Raj — cientistas brilhantes, mas socialmente desajeitados —
+                        e sua relação com a vizinha Penny. A série mistura ciência, humor e cultura geek, tornando-se
+                        um fenômeno mundial com 12 temporadas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERIA -->
+        <section id="galeria" tabindex="0" aria-label="Seção de personagens da série">
+            <h2 class="text-center pt-5">Personagens</h2>
+            <div class="container p-3 mt-3 fundo-galeria">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-4">
+                        <img src="https://preview.redd.it/whats-your-favourite-bazinga-v0-r9d9tl83ccke1.jpeg?width=640&crop=smart&auto=webp&s=88ab3f0472760ba23f451e392f3e14530af81d6f" class="img-fluid rounded-5" alt="Sheldon Cooper" loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0GR46QPGRcosPtNdUDWwe5-cLOhsFHnKp0EUHqT3aHlYzPeI4vZXXRiM4HtgDxnXAScM&usqp=CAU" class="img-fluid rounded-5" alt="Leonard Hofstadter" loading="lazy">
+                    </div>
+                </div>
+                <div class="row mt-4 justify-content-md-center">
+                    <div class="col-md-4">
+                        <img src="https://fwcdn.pl/cpo/22/15/2215/2021.4.jpg" class="img-fluid rounded-5" alt="Penny" loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://i.redd.it/smwibj5j2vkc1.jpeg" class="img-fluid rounded-5" alt="Howard Wolowitz" loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://www.estrelando.com.br/uploads/2015/09/17/kunal-1442502831.jpg" class="img-fluid rounded-5" alt="Howard Wolowitz" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- QUIZ -->
+        <section id="quiz" class="my-5">
+            <h2 class="text-center">Quiz - The Big Bang Theory</h2>
+            <div id="quiz-container" class="p-3"></div>
+            <div class="text-center mt-3">
+                <button id="enviar-quiz" class="btn btn-primary">Enviar Respostas</button>
+            </div>
+            <p id="resultado" class="text-center fw-bold mt-3"></p>
+        </section>
+
+    </main>
+
+    <footer class="text-center p-3 fst-italic">
+        <p>Siga-nos nas redes:</p>
+        <i class="bi bi-whatsapp"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-tiktok"></i>
+        <p class="mt-3">Desenvolvido para fins educacionais - The Big Bang Theory Fanpage.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
